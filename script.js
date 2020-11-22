@@ -23,11 +23,16 @@ form.addEventListener('submit', async e => {
 
 submit.addEventListener('click', s => {
     s.preventDefault();
-    form.parentNode.removeChild(form);
-    const h1 = document.createElement('h1');
-    h1.innerHTML = '배송지 등록<br>성공!'
-    h1.className = 'end-message'
-    mainContainer.appendChild(h1);
+    if (form.keyword.value === '') {
+        alert('배송지 주소를 입력해주세요!')
+    }
+    else {
+        form.parentNode.removeChild(form);
+        const h1 = document.createElement('h1');
+        h1.innerHTML = '배송지 등록<br>성공!'
+        h1.className = 'end-message'
+        mainContainer.appendChild(h1);
+    }
 });
 
 function search(keyword, currentPage = 1, countPerPage = 10) {
