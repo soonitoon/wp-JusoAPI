@@ -1,4 +1,4 @@
-const API_URL = 'http://www.juso.go.kr/addrlink/addrLinkApiJsonp.do';
+const API_URL = 'https://www.juso.go.kr/addrlink/addrLinkApiJsonp.do';
 const API_KEY = 'devU01TX0FVVEgyMDIwMTEyMDEyMjAzMDExMDQ0NDY=';
 const form = document.querySelector('#form');
 const addressList = document.querySelector('#address-list');
