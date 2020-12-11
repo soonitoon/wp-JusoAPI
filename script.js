@@ -74,8 +74,15 @@ function addEventForAddressList() {
         button.addEventListener('click', b => {
             const address = button.innerText;
             form.keyword.value = address;
-            form.removeChild(addressList);
+            removeAddressList();
         });
+    }
+}
+
+funciton removeAddressList() {
+    const toRemoveList = document.querySelectorAll('.address-li');
+    for (var i = 0; i < toRemoveList.length; i++) {
+        addressList.removeChild(toRemoveList[i]);
     }
 }
 
