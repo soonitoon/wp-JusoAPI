@@ -79,7 +79,7 @@ function addEventForAddressList() {
     }
 }
 
-funciton removeAddressList() {
+function removeAddressList() {
     const toRemoveList = document.querySelectorAll('.address-li');
     for (var i = 0; i < toRemoveList.length; i++) {
         addressList.removeChild(toRemoveList[i]);
